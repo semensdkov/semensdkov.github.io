@@ -13,23 +13,30 @@
 </head>
 <body>
 
-    <!-- Shared Navbar -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <i class="fa-solid fa-leaf"></i> Aurelle
-            </a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/process">Our Process</a></li>
-                    <li><a href="/dashboard" class="active">Dashboard</a></li>
-                    <li><a href="/account">My Contribution</a></li>
-                    <li><a href="/#submit" class="btn-nav">Give Us Your Oil</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- Shared Navbar -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-leaf"></i> Aurelle
+        </a>
+
+        <!-- Hidden checkbox drives the mobile menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/process" class="active">Our Process</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/account">My Contribution</a></li>
+                <li><a href="/#submit" class="btn-nav">Give Us Your Oil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main class="dashboard-main">
         <div class="container">
