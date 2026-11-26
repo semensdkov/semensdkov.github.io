@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelle | Turning Used Oil into Premium Detergent</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar fixed">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <i class="fa-solid fa-leaf"></i> Aurelle
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/process">Our Process</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/account">My Contribution</a></li>
+                    <li><a href="#submit" class="btn-nav">Give Us Your Oil</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <span class="badge"><i class="fa-solid fa-recycle"></i> Sustainable Cleaning</span>
+                    <h1>Turning Yesterday's <span class="highlight">Meals</span> into Tomorrow's <span class="highlight">Clean</span>.</h1>
+                    <p>We collect your used cooking oil and magically transform it into powerful, eco-friendly, and biodegradable household detergents. Protect our drains, save the planet, and clean your home—all at once.</p>
+                    <div class="hero-buttons">
+                        <a href="#submit" class="btn btn-primary">Schedule a Pickup <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="/process" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="oil-drop">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="sparkle s1"><i class="fa-solid fa-star"></i></div>
+                        <div class="sparkle s2"><i class="fa-solid fa-star"></i></div>
+                        <div class="sparkle s3"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>How We Make the <span class="highlight">Magic</span></h2>
+                    <p>Our innovative 3-step process ensures that nothing goes to waste. What used to clog our pipes now cleans our homes.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-card reveal">
+                        <div class="card-icon" style="background: rgba(221, 161, 94, 0.15); color: #DDA15E;">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                        </div>
+                        <h3>1. You Collect</h3>
+                        <p>Instead of pouring used cooking oil down the drain, simply store it in a sealed container. We handle the rest.</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <div class="card-icon" style="background: rgba(58, 90, 64, 0.15); color: #3A5A40;">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <h3>2. We Convert</h3>
+                        <p>Through a safe, green chemical process called saponification, we transform the waste oil into rich, cleaning soap bases.</p>
+                    </div>
+                    <div class="process-card reveal">
+                        <div class="card-icon" style="background: rgba(163, 177, 138, 0.2); color: #588157;">
+                            <i class="fa-solid fa-bubbles"></i>
+                        </div>
+                        <h3>3. You Clean</h3>
+                        <p>The result? A premium, biodegradable detergent that cuts through grease effortlessly without harming the environment.</p>
+                    </div>
+                </div>
+
+                <div class="impact-stats reveal">
+                    <div class="stat"><h3>100%</h3><p>Biodegradable</p></div>
+                    <div class="stat"><h3>0</h3><p>Microplastics</p></div>
+                    <div class="stat"><h3>50K+</h3><p>Liters Saved from Drains</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section id="submit" class="submit-section">
+            <div class="container">
+                <div class="form-wrapper reveal">
+                    <div class="form-header">
+                        <h2>Give Us Your <span class="highlight">Used Oil</span></h2>
+                        <p>Schedule a free pickup or request a drop-off kit. Fill out the form below and we'll get in touch within 24 hours.</p>
+                    </div>
+                    <form id="oil-form" class="eco-form" hx-post="/submit-oil" hx-target="this" hx-swap="outerHTML">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="input-group">
+                                <select id="quantity" name="quantity" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="small">Under 5 Liters</option>
+                                    <option value="medium">5 - 20 Liters</option>
+                                    <option value="large">20 - 50 Liters</option>
+                                    <option value="commercial">50+ Liters (Commercial)</option>
+                                </select>
+                                <label for="quantity">Estimated Quantity</label>
+                            </div>
+                        </div>
+                        <div class="input-group full-width">
+                            <input type="text" id="address" name="address" required>
+                            <label for="address">Pickup Address / Location</label>
+                        </div>
+                        <div class="input-group full-width">
+                            <textarea id="notes" name="notes" rows="3"></textarea>
+                            <label for="notes">Additional Notes (Optional)</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Request Pickup</span>
+                            <i class="fa-solid fa-truck-arrow-right"></i>
+                        </button>
+                    </form>
+                    <div id="success-message" class="success-msg">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>Thank you!</h3>
+                        <p>We've received your request. Our team will contact you shortly to schedule your pickup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aurelle. All rights reserved. | Cleaning the world, one drop at a time.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/htmx@1.9.12"></script>
+</body>
+</html>

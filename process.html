@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelle | Our Saponification Process</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<!-- Navigation (CSS-only mobile menu via checkbox hack) -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-leaf"></i> Aurelle
+        </a>
+
+        <!-- Hidden checkbox drives the mobile menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/process" class="active">Our Process</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/account">My Contribution</a></li>
+                <li><a href="/#submit" class="btn-nav">Give Us Your Oil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="process-hero">
+        <div class="container">
+            <div class="process-hero-content reveal">
+                <span class="badge"><i class="fa-solid fa-flask"></i> The Science of Clean</span>
+                <h1>From Wasted Oil to <span class="highlight">Pure Clean</span></h1>
+                <p class="process-intro">Discover the ancient art of saponification — a time-tested chemical process that transforms used cooking oil into powerful, biodegradable detergent. No harsh chemicals, no waste, just nature's cleaning solution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Saponification -->
+    <section class="process-intro-section">
+        <div class="container">
+            <div class="process-intro-grid">
+                <div class="process-intro-text reveal">
+                    <h2>What is <span class="highlight">Saponification</span>?</h2>
+                    <p>Saponification is a chemical reaction that has been used for thousands of years to make soap. The word comes from the Latin "sapo," meaning soap.</p>
+                    <p>When fats or oils react with an alkaline solution (like lye), they undergo a transformation. The triglyceride molecules in the oil break apart and recombine with the alkali to form two things:</p>
+                    <ul class="process-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span><strong>Soap molecules</strong> — the cleaning agents that lift dirt and grease</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span><strong>Glycerin</strong> — a natural moisturizer that makes soap gentle</span></li>
+                    </ul>
+                    <p>At Aurelle, we've perfected this process using your used cooking oil, creating a premium detergent that's tough on grime but kind to the planet.</p>
+                </div>
+                <div class="process-intro-visual reveal">
+                    <div class="chemical-diagram">
+                        <div class="chem-item">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>Oil + Lye</span>
+                        </div>
+                        <div class="chem-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="chem-item">
+                            <i class="fa-solid fa-soap"></i>
+                            <span>Soap + Glycerin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Process -->
+    <section class="process-steps">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our <span class="highlight">5-Step</span> Process</h2>
+                <p>From your kitchen to a bottle of premium detergent — here's how the magic happens</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="process-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon icon-amber">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                        </div>
+                        <h3>Collection & Sorting</h3>
+                        <p>You save your used cooking oil in sealed containers, and we pick it up. Our team sorts the oil by type and quality — vegetable oils work best for soap-making.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Free pickup service</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Quality inspection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon icon-green">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                        <h3>Filtration & Purification</h3>
+                        <p>The oil goes through multiple filtration stages to remove food particles, impurities, and odors. We use eco-friendly filtration methods that preserve the oil's cleaning properties.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Multi-stage filtration</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Odor neutralization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon icon-green">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <h3>The Saponification Reaction</h3>
+                        <p>This is where the magic happens. We carefully mix the purified oil with a precisely-measured alkaline solution (sodium hydroxide). The mixture is heated and stirred continuously for several hours.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-temperature-half"></i>
+                                <span>Controlled temperature: 40-50°C</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Reaction time: 2-4 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-vial"></i>
+                                <span>Precise pH monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step reveal">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon icon-sage">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <h3>Curing & Testing</h3>
+                        <p>The raw soap mixture needs time to cure and complete the chemical reaction. We let it rest for 24-48 hours, then test the pH to ensure it's perfectly balanced and safe for use.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>pH testing (target: 8-10)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Quality control checks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step reveal">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon icon-sage">
+                            <i class="fa-solid fa-bottle-droplet"></i>
+                        </div>
+                        <h3>Bottling & Distribution</h3>
+                        <p>The finished detergent is bottled in eco-friendly containers and ready for use. It's a powerful, biodegradable cleaner that cuts through grease while being gentle on the environment.</p>
+                        <div class="step-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-leaf"></i>
+                                <span>100% biodegradable</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-recycle"></i>
+                                <span>Recyclable packaging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Science -->
+    <section class="process-science">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>The <span class="highlight">Chemistry</span> Behind It</h2>
+                <p>A closer look at the molecular transformation</p>
+            </div>
+
+            <div class="science-grid">
+                <div class="science-card reveal">
+                    <div class="science-icon">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <h3>Triglycerides</h3>
+                    <p>Cooking oil is made of triglyceride molecules — three fatty acid chains attached to a glycerol backbone. These are the building blocks of our soap.</p>
+                </div>
+
+                <div class="science-card reveal">
+                    <div class="science-icon">
+                        <i class="fa-solid fa-vial-circle-check"></i>
+                    </div>
+                    <h3>Alkaline Solution</h3>
+                    <p>We use potassium hydroxide (KOH), commonly known as lye. This strong base breaks the chemical bonds in the triglycerides.</p>
+                </div>
+
+                <div class="science-card reveal">
+                    <div class="science-icon">
+                        <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                    </div>
+                    <h3>The Reaction</h3>
+                    <p>When oil meets lye, the triglycerides split apart. The fatty acids bond with sodium to form soap molecules, while glycerol becomes free glycerin.</p>
+                </div>
+
+                <div class="science-card reveal">
+                    <div class="science-icon">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+                    <h3>Soap Molecules</h3>
+                    <p>Each soap molecule has a water-loving head and an oil-loving tail. This dual nature allows soap to lift grease and dirt so water can wash them away.</p>
+                </div>
+            </div>
+
+            <div class="chemical-equation reveal">
+                <div class="equation-item">
+                    <span class="equation-label">Triglyceride</span>
+                    <div class="equation-formula">C₃H₅(OOCR)₃</div>
+                </div>
+                <div class="equation-plus">+</div>
+                <div class="equation-item">
+                    <span class="equation-label">Potassium Hydroxide</span>
+                    <div class="equation-formula">3 KOH</div>
+                </div>
+                <div class="equation-arrow">→</div>
+                <div class="equation-item">
+                    <span class="equation-label">Soap</span>
+                    <div class="equation-formula">3 RCOOK</div>
+                </div>
+                <div class="equation-plus">+</div>
+                <div class="equation-item">
+                    <span class="equation-label">Glycerin</span>
+                    <div class="equation-formula">C₃H₈O₃</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="process-benefits">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why <span class="highlight">Choose</span> Our Process?</h2>
+                <p>The advantages of saponification-based cleaning</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>100% Biodegradable</h3>
+                    <p>Our soap breaks down naturally in the environment, leaving no harmful residues. Safe for water systems and soil.</p>
+                </div>
+
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <h3>Waste-to-Resource</h3>
+                    <p>We transform a problematic waste product into a valuable cleaning solution. Every liter of oil saved is a liter not polluting our drains.</p>
+                </div>
+
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>No Harsh Chemicals</h3>
+                    <p>No synthetic surfactants, no phosphates, no artificial fragrances. Just pure, natural cleaning power from a time-tested process.</p>
+                </div>
+
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                    </div>
+                    <h3>Gentle Yet Effective</h3>
+                    <p>The natural glycerin produced during saponification moisturizes while cleaning. Tough on grease, gentle on hands.</p>
+                </div>
+
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h3>Carbon Footprint Reduction</h3>
+                    <p>By recycling oil, we reduce the environmental damage of improper oil disposal.</p>
+                </div>
+
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Community Impact</h3>
+                    <p>Every pickup supports local sustainability. You're not just cleaning — you're contributing to a circular economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="process-cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Be Part of the <span class="highlight" style="color: var(--warm-amber);">Solution</span>?</h2>
+                <p>Join hundreds of eco-conscious households and businesses who are turning their waste oil into premium detergent.</p>
+                <div class="cta-buttons">
+                    <a href="/#submit" class="btn btn-primary" style="background: var(--warm-amber);">Schedule a Pickup <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="/dashboard" class="btn btn-secondary" style="background: transparent; color: var(--white); border-color: var(--white);">View Our Impact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Aurelle. All rights reserved. | Cleaning the world, one drop at a time.</p>
+    </div>
+</footer>
+
+</body>
+</html>

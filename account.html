@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelle | My Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-leaf"></i> Aurelle
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/process">Our Process</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/account" class="active">My Contribution</a></li>
+                <li><a href="/#submit" class="btn-nav">Give Us Your Oil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Profile Hero -->
+    <section class="account-hero">
+        <div class="container">
+            <div class="account-hero-content reveal">
+                <div class="account-avatar">
+                    <span class="avatar-initials">MH</span>
+                    <span class="avatar-badge"><i class="fa-solid fa-leaf"></i></span>
+                </div>
+                <div class="account-hero-text">
+                    <h1><span class="highlight">Maria Hernandez</span></h1>
+                    <p class="account-subtitle">Helped us save 248 liters of oil from entering our waterways. That's the equivalent of filling a kid's swimming pool!</p>
+                    <div class="account-hero-actions">
+                        <a href="/#submit" class="btn btn-primary">
+                            <i class="fa-solid fa-truck-arrow-right"></i> Schedule Pickup
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fa-solid fa-gear"></i> Edit Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Stats -->
+    <section class="account-stats">
+        <div class="container">
+            <div class="kpi-grid reveal">
+                <div class="kpi-card amber">
+                    <div class="kpi-icon"><i class="fa-solid fa-oil-can"></i></div>
+                    <div class="kpi-label">Currently Stored</div>
+                    <div class="kpi-value">12.5 <span class="kpi-unit">L</span></div>
+                    <span class="kpi-trend up"><i class="fa-solid fa-clock"></i> Ready for pickup</span>
+                </div>
+                <div class="kpi-card green">
+                    <div class="kpi-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="kpi-label">Total Oil Sent</div>
+                    <div class="kpi-value">248 <span class="kpi-unit">L</span></div>
+                    <span class="kpi-trend up"><i class="fa-solid fa-arrow-up"></i> Top 1% of retail customers</span>
+                </div>
+                <div class="kpi-card sage">
+                    <div class="kpi-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="kpi-label">CO₂ Saved</div>
+                    <div class="kpi-value">90 <span class="kpi-unit">kg</span></div>
+                    <span class="kpi-trend up"><i class="fa-solid fa-leaf"></i> Eco warrior</span>
+                </div>
+                <div class="kpi-card terra">
+                    <div class="kpi-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="kpi-label">Last Submission</div>
+                    <div class="kpi-value" style="font-size: 1.4rem;">Nov 12, 2026</div>
+                    <span class="kpi-trend up"><i class="fa-solid fa-bottle-droplet"></i> 8.2 L sent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <section class="account-main">
+        <div class="container">
+            <div class="account-grid">
+
+                <!-- Left Column: History + Stored Oil -->
+                <div class="account-left">
+
+                    <!-- Stored Oil Progress -->
+                    <div class="card reveal">
+                        <div class="card-header">
+                            <div>
+                                <h3>Your Storage</h3>
+                                <div class="subtitle">Current oil awaiting pickup</div>
+                            </div>
+                            <div class="storage-indicator">
+                                <span class="storage-value">12.5 L</span>
+                                <span class="storage-max">/ 20 L</span>
+                            </div>
+                        </div>
+                        <div class="storage-body">
+                            <div class="storage-bar">
+                                <div class="storage-bar-fill" style="width: 62.5%;"></div>
+                            </div>
+                            <div class="storage-tips">
+                                <div class="storage-tip">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <span>Your container is <strong>62.5% full</strong>. Schedule a pickup when it reaches 15L+ for maximum efficiency.</span>
+                                </div>
+                            </div>
+                            <div class="storage-actions">
+                                <a href="/#submit" class="btn btn-primary">
+                                    <i class="fa-solid fa-truck"></i> Request Pickup Now
+                                </a>
+                                <div class="storage-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> 123 Green St, Apt 4B</span>
+                                    <span><i class="fa-solid fa-clock"></i> Projected next pickup: Tomorrow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submission History -->
+                    <div class="card reveal">
+                        <div class="card-header">
+                            <div>
+                                <h3>Submission History</h3>
+                                <div class="subtitle">Your recent oil contributions</div>
+                            </div>
+                            <a href="#" class="view-all-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                        <div class="history-list">
+                            <div class="history-row">
+                                <div class="history-date">
+                                    <div class="history-day">12</div>
+                                    <div class="history-month">Nov</div>
+                                </div>
+                                <div class="history-info">
+                                    <div class="history-title">Pickup Completed</div>
+                                    <div class="history-meta">
+                                        <i class="fa-solid fa-bottle-droplet"></i> 8.2 L ·
+                                        <i class="fa-solid fa-location-dot"></i> Home
+                                    </div>
+                                </div>
+                                <div class="history-impact">
+                                    <span class="impact-value">-13.1 kg</span>
+                                    <span class="impact-label">CO₂ saved</span>
+                                </div>
+                                <span class="badge-pill eco"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+
+                            <div class="history-row">
+                                <div class="history-date">
+                                    <div class="history-day">28</div>
+                                    <div class="history-month">Oct</div>
+                                </div>
+                                <div class="history-info">
+                                    <div class="history-title">Pickup Completed</div>
+                                    <div class="history-meta">
+                                        <i class="fa-solid fa-bottle-droplet"></i> 11.5 L ·
+                                        <i class="fa-solid fa-location-dot"></i> Home
+                                    </div>
+                                </div>
+                                <div class="history-impact">
+                                    <span class="impact-value">-18.4 kg</span>
+                                    <span class="impact-label">CO₂ saved</span>
+                                </div>
+                                <span class="badge-pill eco"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+
+                            <div class="history-row">
+                                <div class="history-date">
+                                    <div class="history-day">15</div>
+                                    <div class="history-month">Oct</div>
+                                </div>
+                                <div class="history-info">
+                                    <div class="history-title">Pickup Completed</div>
+                                    <div class="history-meta">
+                                        <i class="fa-solid fa-bottle-droplet"></i> 6.8 L ·
+                                        <i class="fa-solid fa-location-dot"></i> Home
+                                    </div>
+                                </div>
+                                <div class="history-impact">
+                                    <span class="impact-value">-10.9 kg</span>
+                                    <span class="impact-label">CO₂ saved</span>
+                                </div>
+                                <span class="badge-pill eco"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+
+                            <div class="history-row">
+                                <div class="history-date">
+                                    <div class="history-day">02</div>
+                                    <div class="history-month">Oct</div>
+                                </div>
+                                <div class="history-info">
+                                    <div class="history-title">Pickup Completed</div>
+                                    <div class="history-meta">
+                                        <i class="fa-solid fa-bottle-droplet"></i> 9.4 L ·
+                                        <i class="fa-solid fa-location-dot"></i> Home
+                                    </div>
+                                </div>
+                                <div class="history-impact">
+                                    <span class="impact-value">-15.0 kg</span>
+                                    <span class="impact-label">CO₂ saved</span>
+                                </div>
+                                <span class="badge-pill eco"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+
+                            <div class="history-row">
+                                <div class="history-date">
+                                    <div class="history-day">18</div>
+                                    <div class="history-month">Sep</div>
+                                </div>
+                                <div class="history-info">
+                                    <div class="history-title">Pickup Completed</div>
+                                    <div class="history-meta">
+                                        <i class="fa-solid fa-bottle-droplet"></i> 7.1 L ·
+                                        <i class="fa-solid fa-location-dot"></i> Home
+                                    </div>
+                                </div>
+                                <div class="history-impact">
+                                    <span class="impact-value">-11.4 kg</span>
+                                    <span class="impact-label">CO₂ saved</span>
+                                </div>
+                                <span class="badge-pill eco"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Achievements + Impact -->
+                <div class="account-right">
+
+                    <!-- Achievement Card -->
+                    <div class="card achievement-card reveal">
+                        <div class="card-header">
+                            <div>
+                                <h3>Your Achievements</h3>
+                                <div class="subtitle">Badges you've earned</div>
+                            </div>
+                        </div>
+                        <div class="achievement-grid">
+                            <div class="achievement earned">
+                                <div class="achievement-icon"><i class="fa-solid fa-seedling"></i></div>
+                                <div class="achievement-name">First Drop</div>
+                            </div>
+                            <div class="achievement earned">
+                                <div class="achievement-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="achievement-name">Eco Warrior</div>
+                            </div>
+                            <div class="achievement earned">
+                                <div class="achievement-icon"><i class="fa-solid fa-fire"></i></div>
+                                <div class="achievement-name">100L Club</div>
+                            </div>
+                            <div class="achievement earned">
+                                <div class="achievement-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                                <div class="achievement-name">Regular</div>
+                            </div>
+                            <div class="achievement locked">
+                                <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <div class="achievement-name">500L Club</div>
+                                <span class="achievement-progress">49%</span>
+                            </div>
+                            <div class="achievement locked">
+                                <div class="achievement-icon"><i class="fa-solid fa-crown"></i></div>
+                                <div class="achievement-name">Champion</div>
+                                <span class="achievement-progress">Locked</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Environmental Impact -->
+                    <div class="card impact-card reveal">
+                        <div class="card-header">
+                            <div>
+                                <h3>Your Impact</h3>
+                                <div class="subtitle">What your contribution means</div>
+                            </div>
+                        </div>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fa-solid fa-tree"></i>
+                                <div>
+                                    <strong>7 trees</strong>
+                                    <span>equivalent CO₂ absorbed per year</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fa-solid fa-faucet-drip"></i>
+                                <div>
+                                    <strong>6,000 L</strong>
+                                    <span>of clean water preserved</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fa-solid fa-battery-full"></i>
+                                <div>
+                                    <strong>60 kWh</strong>
+                                    <span>of energy saved vs new oil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Goal -->
+                    <div class="goal-card reveal">
+                        <h4><i class="fa-solid fa-bullseye"></i> November Goal</h4>
+                        <div class="goal-sub">Send 30 liters this month</div>
+                        <div class="goal-progress">
+                            <div class="goal-progress-fill" style="width: 73%;"></div>
+                        </div>
+                        <div class="goal-stats">
+                            <div>
+                                <strong>22 L</strong>
+                                sent
+                            </div>
+                            <div style="text-align: right;">
+                                <strong>73%</strong>
+                                complete
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Aurelle. All rights reserved. | Cleaning the world, one drop at a time.</p>
+    </div>
+</footer>
+
+</body>
+</html>
