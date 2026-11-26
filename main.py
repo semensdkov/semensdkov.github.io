@@ -5,7 +5,7 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI(title="EcoSuds")
 
-app.mount("/static", StaticFiles(directory="templates/static"), name="static")
+app.mount("/static", StaticFiles(directory="/"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
